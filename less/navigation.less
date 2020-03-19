@@ -1,1 +1,42 @@
 // Navigation Styles here
+.navBarSection { 
+    display: flex;
+    margin: auto;
+    flex-direction: row;
+    background-color: white;
+    border-bottom: 1px dashed black;
+    width: 100%;
+
+    h1 {
+       margin-right: 25%;
+       margin-left: 10%;
+    }
+    nav {
+        padding: 1% 0%;
+
+        a {
+            padding: 1.5rem;
+            color: black;
+            text-decoration: none;
+            font-size: 1.8rem;
+            
+            &:hover{
+                text-decoration: underline;
+            }
+        }// ends a
+    }// ends nav
+  }// ends navbarSection
+
+
+  
+@media @mobile {
+    .navBarSection {
+        display: flex;
+        flex-direction: column;
+
+        nav {
+            display: flex;
+            flex-direction: column;
+        }
+    }
+}

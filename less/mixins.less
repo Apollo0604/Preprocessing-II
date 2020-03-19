@@ -1,1 +1,17 @@
 // Mixins in here
+
+.content-pickButtons{
+    display: flex;
+    justify-content: center;
+    border: @content-pickButtonsBorder;
+    background-color: @content-pickButtonsBackground;
+    color: @content-pickButtonsFontColor;
+    border-radius: 10px;
+    padding: 10px 10px;
+}
+
+
+.btn {
+    .content-pickButtons;
+}
+
